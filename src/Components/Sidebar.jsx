@@ -6,7 +6,7 @@ import { FaListUl } from "react-icons/fa6";
 import { BiBarChart } from "react-icons/bi";
 import { MdEventNote, MdOutlineMailOutline } from "react-icons/md";
 import { TbFolderQuestion, TbUserSquareRounded } from "react-icons/tb";
-import logo from '../assets/Logo.PNG';
+import logo from '../assets/Logo.png';
 
 const Sidebar = () => {  
   const [activeIndex, setActiveIndex] = useState(0);
