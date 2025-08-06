@@ -3,7 +3,6 @@ import LeadsHeader from "./LeadsHeader";
 import Status from "./Statusbar";
 import Toolbar from "./Toolbar";
 import LeadsTable from "./LeadsTable";
-import '../Index.css';
 
 const Dashboard = () =>{
     return (
