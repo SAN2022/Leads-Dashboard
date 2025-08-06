@@ -1,6 +1,6 @@
 import Sidebar from './Components/Sidebar';
 import Dashboard from './Components/Dashboard';
-import './Index.css';
+import './App.css';
 
 function App() {
   return (
