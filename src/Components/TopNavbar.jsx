@@ -7,7 +7,7 @@ const TopNavBar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="flex justify-between items-center pl-5 pr-12 py-2 md:pr-15 xl:pr-8 bg-white border-b-1 border-gray-200">
+    <header className="flex justify-between items-center pl-5 pr-4 py-2 md:pr-6 bg-white border-b-1 border-gray-200">
       <div className="flex items-center gap-3">
         <button>
           <HiMenuAlt1 size={24}/>

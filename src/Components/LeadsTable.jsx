@@ -107,12 +107,11 @@ function LeadsTable(){
 
     return (
         <>
-        <div>
-        <div className="border overflow-x-auto rounded-lg ml-6 mr-10 md:mr-15 lg:mr-15 xl:mr-8">
-            <table className="min-w-full text-xs lg:text-sm">
+        <div className="border overflow-auto rounded-lg ml-6 mr-4 mb-4">
+            <table className="min-w-full text-xs lg:text-sm whitespace-nowrap">
                 <thead className="text-gray-500 text-left">
                     <tr className='bg-white'>
-                        <th className="pl-1"><input type="checkbox" /></th>
+                        <th className="pl-2"><input type="checkbox" /></th>
                         <th className="px-1 py-3">Lead ID</th>
                         <th className="px-1 py-3">Customer</th>
                         <th className="px-1 py-3">Company</th>
@@ -131,31 +130,31 @@ function LeadsTable(){
                 <tbody className="bg-white divide-y divide-gray-100">
                 {leads.map((lead, index) => (
                     <tr key={index} className="odd:bg-gray-100 even:bg-white hover:bg-gray-50">
-                    <td className="pl-1">
-                        <input type="checkbox" />
-                    </td>
-                    <td className="px-2 py-3">{lead.id}</td>
-                    <td className="px-2 py-3 font-medium text-blue-600">{lead.customer}</td>
-                    <td className="px-2 py-3">{lead.company}</td>
-                    <td className="px-2 py-3 font-medium text-blue-600">{lead.email}</td>
-                    <td className="px-2 py-3 font-medium text-blue-600">{lead.phone}</td>
-                    <td className="px-2 py-3">{lead.value}</td>
-                    <td className="px-2 py-3">
-                        <span className={`px-2 py-1 text-xs rounded-full font-medium ${lead.tagColor} border`}>
-                        {lead.tag}
-                        </span>
-                    </td>
-                    <td className="px-2 py-3">{lead.source}</td>
-                    <td className="px-2 py-3 flex justify-center">
-                        <img src={lead.avatar} alt="avatar" className="h-8 w-8 rounded-full object-cover" />
-                    </td>
-                    <td className="px-1 py-3">
-                        <span className={`px-2 py-1 text-xs rounded-full font-medium ${lead.statusColor} border`}>
-                            {lead.status}
-                        </span>
-                    </td>
-                    <td className="px-2 py-3">{lead.created}</td>
-                    <td className="pr-4 py-3 text-lg cursor-pointer">{lead.icon}</td>
+                        <td className="pl-2">
+                            <input type="checkbox" />
+                        </td>
+                        <td className="px-1 py-3">{lead.id}</td>
+                        <td className="px-1 py-3 font-medium text-blue-600">{lead.customer}</td>
+                        <td className="px-1 py-3">{lead.company}</td>
+                        <td className="px-1 py-3 font-medium text-blue-600">{lead.email}</td>
+                        <td className="px-1 py-3 font-medium text-blue-600">{lead.phone}</td>
+                        <td className="px-1 py-3">{lead.value}</td>
+                        <td className="px-1 py-3">
+                            <span className={`px-1 py-1 text-xs rounded-full font-medium ${lead.tagColor} border`}>
+                            {lead.tag}
+                            </span>
+                        </td>
+                        <td className="px-1 py-3">{lead.source}</td>
+                        <td className="px-1 py-3 flex justify-center">
+                            <img src={lead.avatar} alt="avatar" className="h-8 w-8 rounded-full object-cover" />
+                        </td>
+                        <td className="px-1 py-3">
+                            <span className={`px-1 py-1 text-xs rounded-full font-medium ${lead.statusColor} border`}>
+                                {lead.status}
+                            </span>
+                        </td>
+                        <td className="px-1 py-3">{lead.created}</td>
+                        <td className="pr-4 py-3 text-lg cursor-pointer">{lead.icon}</td>
                     </tr>
                     ))}
                 </tbody>
@@ -174,7 +173,7 @@ function LeadsTable(){
                 {Array.from({ length: 10 }, (_, i) => (
                     <button
                     key={i}
-                    className={`px-3 py-1 rounded-md text-sm ${
+                    className={`px-2 py-1 rounded-md text-sm ${
                         currentPage === i + 1 ? "bg-blue-500 text-white" : "border"
                     }`}
                     onClick={() => setCurrentPage(i + 1)}
@@ -191,7 +190,6 @@ function LeadsTable(){
                 Next <IoArrowForward/>
                 </button>
             </div>
-        </div>
         </div>
         </>
     )

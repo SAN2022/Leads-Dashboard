@@ -21,7 +21,7 @@ const Sidebar = () => {
     { icon: <FaListUl />, label: "List" },
     { icon: <BiBarChart />, label: "Stats" },
     { icon: <MdEventNote />, label: "Note" },
-    { icon: <TbFolderQuestion className="mt-30"/>, label: "Help" },
+    { icon: <TbFolderQuestion className="mt-40"/>, label: "Help" },
     { icon: <TbUserSquareRounded />, label: "User" }
   ];
 

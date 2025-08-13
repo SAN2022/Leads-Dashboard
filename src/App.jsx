@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <div className="flex">
+      <div className="flex overflow-x-hidden">
         <Sidebar />
         <Dashboard />
       </div>
