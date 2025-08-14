@@ -5,7 +5,7 @@ import { RiCarouselView } from "react-icons/ri";
 
 function Toolbar() {
   return (
-    <div className="w-full flex flex-wrap justify-between items-center gap-4 pl-6 pr-4 my-3  lg:text-sm text-xs text-black">
+    <div className="w-full flex flex-wrap justify-between items-center gap-2 pl-6 pr-4 my-3  lg:text-sm text-xs text-black">
       {/* Left Section: Buttons */}
       <div className="flex gap-2">
         <button className="flex items-center gap-1 bg-white border p-2 rounded-3 font-medium">

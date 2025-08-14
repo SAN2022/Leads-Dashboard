@@ -11,7 +11,7 @@ const leadStats = [
 function LeadStatus() {
   return (
     <div className="bg-white px-6 pt-2 rounded-lg border ml-6 mr-4 mt-2">
-      <div className="p-0 grid grid-cols-4 md:grid-cols-7 text-left">
+      <div className="p-0 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 text-left">
         {leadStats.map(({ label, value, color }, idx) => (
           <div key={idx}>
             <p className={`text-xs md:text-sm font-semibold ${color || "text-gray-600"}`}>{label}</p>

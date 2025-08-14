@@ -17,7 +17,7 @@ const TopNavBar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="w-60 xl:w-80 pl-10 pr-4 py-2 border rounded-md text-sm focus:ring"
+            className="w-48 xl:w-80 pl-10 pr-4 py-2 border rounded-md text-sm focus:ring"
           />
         </div>
       </div>

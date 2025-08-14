@@ -16,7 +16,7 @@ const LeadsHeader = () => {
       </div>
 
       {/* Buttons */}
-      <div className="sm:mt-0 flex gap-2 mr-2">
+      <div className="sm:mt-0 flex gap-2 mr-2 mb-2">
         <button
           onClick={() => setShowModal(true)}
           className="flex items-center gap-1 px-2 py-1 bg-blue-600 text-white rounded-2 hover:bg-blue-700 transition"
